@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset=UTF-8“/>
+    <title>Cheetsheat 02</title>
+</head>
+<body>
+
+  <h1>HTML</h1>
+  <h2>Empty Elements</h2>
+  <p>HTML elements with no content are called empty elements.</p>
+  <b><p>Zum Beispeil:</p></b>
+  <p>< b > (Dieser Tag hat keinen EndTag, daher auch keinen Content)</p>
+  <p>Diese Elements werden auch <b>void Elements</b> genannt.</p>
+
+  <h2>Einen Button erstellen</h2>
+  Startet mit dem Tag < button > und endet auch mit < /button >.<br>
+  In Atom wird es vorgegeben mit:<br>
+  < button type="button" name="button">< /button>
+
+  <h2>Attribute</h2>
+  <ul>
+    <li>All HTML elements can have attributes</li>
+    <li>Attributes provide additional information about an element.</li>
+    <li>Attributes are always specified in the start tag.</li>
+    <li>Attributes usually come in name/value paris like: name="value"</li>
+  </ul>
+
+  <p>Beispiele fuer Attribute</p>
+  <ol>
+    <li>href: Link Adresse</li>
+    <dd> < a href="https://www.w3schools.com">This is a link< /a> </dd>
+
+    <li>src: Image Source</li>
+    <dd>  < img src="img_girl.jpg">  </dd>
+
+    <li>width/height: size Attributes</li>
+    <dd>  < img src="img_girl.jpg" width="500" height="600">   </dd>
+
+    <li>alt: when the Image doesn't exist.</li>
+    <dd>  < img src="img_girl.jpg" alt="Girl with a jacket">   </dd>
+
+    <li>alt: when the Image doesn't exist.</li>
+    <dd>  < img src="img_girl.jpg" alt="Girl with a jacket">   </dd>
+
+    <li>style: Change color of Text</li>
+    <dd> < p style="color:red">I am a paragraph< /p> </dd>
+
+    <li>lang: defines the Language in the beginning html Tag</li>
+    <dd> < html lang="en-US"> </dd>
+
+    <li>title: Ein tooltip für den Text</li>
+    <dd>  < p title="I'm a tooltip">   content...  < /p>  </dd>
+
+  </ol>
+
+  <h2>Chapter Summary</h2>
+  <ol>
+    <li>All HTML elements can have attributes</li>
+    <li>The title attribute provides additional "tool-tip" information</li>
+    <li>The href attribute provides address information for links</li>
+    <li>The width and height attributes provide size information for images</li>
+    <li>The alt attribute provides text for screen readers</li>
+    <li>At W3Schools we always use lowercase attribute names</li>
+    <li>At W3Schools we always quote attribute values with double quotes</li>
+  </ol>
+
+
+  <h2>Heading are important</h2>
+  <p>Search engines use the headings to index the structure and content of your web pages. <br>
+
+Users skim your pages by its headings. It is important to use headings to show the document structure. <br>
+
+< h1> headings should be used for main headings, followed by < h2> headings, then the less important < h3>, and so on.</p>
+
+<b> <p>Use style-Attribute to size the header:</p> </b>
+<p>< h1 style="font-size:60px;">Heading 1< /h1></p>
+
+<h2>Horrizontale Linie</h2>
+<p>Der Tag (empty Tag) besteht aus dem Tag <b>< hr></b></p>
+
+
+<h2>HTML head element</h2>
+<b>A container for all the head elements (title, scripts, styles, meta information, and more)</b>
+<p>The HTML <head> element has nothing to do with HTML headings.<br>
+
+The <head> element is a container for metadata. HTML metadata is data about the HTML document. Metadata is not displayed.<br>
+
+The <head> element is placed between the <html> tag and the <body> tag:</p>
+
+
+<h2>Paragraphs</h2>
+
+<p><b> < p> </b> gibt den Inhalt in einer Zeile aus! </p>
+<p><b> < pre> </b> gibt den mehrzeilig aus! </p>
+
+<ul>
+  <li> < p>  </li>
+  <dd>Deffiniert einen Paragrapeh.</dd>
+  <li> < br>  </li>
+  <dd>Lässt eine neue Zeile beginnen.</dd>
+  <li> < pre>  </li>
+  <dd>Gibt den Content mehrzeilig aus.</dd>
+</ul>
+
+<h2>Kommentare</h2>
+<pre>Ein Kommentar beginnt mit
+<b>< !--</b>
+und endet mit
+<b>--></b>
+Dadurch kann dieser Kommentar ein- aber auch mehrzeilig sein.</pre>
+
+<h2>Links</h2>
+<pre>Links werden mit dem Tag < a> gebildet:
+  < a href="url">link text< /a>
+</pre>
+<b>zum Beispiel:</b>
+<p> < a href="https://www.w3schools.com/html/">Visit our HTML tutorial< /a> </p>
+
+<p><b>Eine lokale Seite verlinken (ohne https://www..)</b></p>
+<p>< a href="html_images.asp">HTML Images< /a> </p>
+
+<h3>Link Colors</h3>
+<b>Normales Design eines Linkes:</b>
+<ul title="Normales Design eines Linkes">
+  <li>An unvisited link is underlined and blue</li>
+  <li>A visited link is underlined and purple</li>
+  <li>An active link is underlined and red</li>
+
+</ul>
+
+<b>Wie (wo) soll die Seite geöffnet werden:</b>
+<ul title="Normales Design eines Linkes">
+  <li>_blank - Opens the linked document in a new window or tab</li>
+    <li>_self - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+    <li>_parent - Opens the linked document in the parent frame</li>
+    <li>_top - Opens the linked document in the full body of the window</li>
+    <li>framename - Opens the linked document in a named frame</li>
+</ul>
+
+<p><b>Beispiel für einen Link:</b> </p>
+<p>< a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!< /a> </p>
+
+<p>  <b>Ein Bild als Link setzen Bsp.:</b> </p>
+<pre>
+< a href="default.asp">
+< img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+< /a>
+</pre>
+
+<h3>Zu einem bestimmten Punkt in der Seite (bookmark) springen:</h3>
+<b>Auch bezeichnet als ein ID attrubut: (id="value")</b>
+<p>< a href="html_demo.html#C4">Jump to Chapter 4< /a> </p>
+
+<h2>HTML Images</h2>
+<h3>Ein Bild anzeigen: </h3>
+<p>< img src="pic_trulli.jpg" alt="Italian Trulli"></p>
+
+<h3>Set width and heigth</h3>
+<p>< img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> </p>
+
+<h3>Float</h3>
+<p>Mit float:"left/right", kann man ein Image and den rechten oder linken Rand bringen</p>
+
+<h3>Image Maps</h3>
+<pre> < img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+< map name="workmap">
+  < area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  < area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  < area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+< /map> </pre>
+
+<h3>Background Image</h3>
+<pre>
+< p style="background-image:url('clouds.jpg')">   ...   < /p>
+</pre>
+
+<h3>Summary</h3>
+<pre>
+    Use the HTML < img> element to define an image
+    Use the HTML src attribute to define the URL of the image
+    Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+    Use the HTML width and height attributes to define the size of the image
+    Use the CSS width and height properties to define the size of the image (alternatively)
+    Use the CSS float property to let the image float
+    Use the HTML < map> element to define an image-map
+    Use the HTML < area> element to define the clickable areas in the image-map
+    Use the HTML < img>'s element usemap attribute to point to an image-map
+    Use the HTML < picture> element to show different images for different devices
+</pre>
+
+<h2>HTML Head</h2>
+<pre>The following tags describe metadata: < title>, < style>, < meta>, < link>, < script>, and < base>.</pre>
+
+<h3>Title Element</h3>
+Es deffiniert den Seitennamen
+<p>< title>Page Title< /title></p>
+
+<h3>Stylesheet verlinken</h3>
+<p> < link rel="stylesheet" href="mystyle.css"> </p>
+
+<h3>Set Viewport</h3>
+
+<p>< meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+
+
+<h1>CSS</h1>
+<h2>Beispiel Aufbau:</h2>
+<pre>
+  p {
+    color: red;
+    text-align: center;
+}
+</pre>
+<pre>
+  p = Selector
+  color, text-align = property
+  red, center = value
+</pre>
+
+<h3>Mit links arbeiten</h3>
+<b><p>CSS</p></b>
+<pre>
+  #para1 {
+    text-align: center;
+    color: red;
+}
+<b><p>HTML</p></b>
+< p id="para1">Hello World!</p>
+</pre>
+
+<h3>Arbeiten mit class</h3>
+<b><p>CSS</p> </b>
+p.center {
+    text-align: center;
+    color: red;
+}
+
+<b><p>HTML</p> </b>
+< h1 class="center">This heading will not be affected< /h1 ><br>
+
+<h3>CSS Kommentare</h3>
+<pre>
+  Beginnen mit
+  /*
+  und enden mit
+  */
+</pre>
+<h2>Background setzen</h2>
+<b> <p>Beispiel:</p> </b>
+ <p>< h1 style="background-color:DodgerBlue;">Hello World< /h1></p> h1 style="background-color:DodgerBlue;">Hello World< /h1>
+ <h2>Textcolor setzen</h2>
+ <b> <p>Beispiel:</p> </b>
+ <p> < h1 style="color:Tomato;">Hello World< /h1> </p>
+ <h2>Umrandung (Border) setzen</h2>
+ <b> <p>Beispiel:</p> </b>
+ <p> < h1 style="border:2px solid Tomato;">Hello World< /h1> </p>
+
+ <h2>Farbennamen</h2>
+ <pre>
+   Tomato = rot
+   Orange = orange
+   DodgerBlue = blau
+   MediumSeaGreen = grün
+   Gray = grau
+   SlateBlue = lola
+   Violet = pink
+   LightGray = Grau
+ </pre>
+
+ <h2>Wert transparenz</h2>
+ <pre>
+   rgba(255,99,71,0) --> ganz transparent
+   rgba(255,99,71,1) --> nicht transperent
+ </pre>
+
+ <h2>Background</h2>
+ <h3> <b>Image</b> </h3>
+ <h3>Background for whole page</h3>
+<pre>
+  body {
+    background-color: lightblue;
+  }
+</pre>
+<h3>Background for paragraph</h3>
+<pre>
+  p {
+      background-color: yellow;
+  }
+</pre>
+<h3> <b>URL</b> </h3>
+<h3>Background for whole page</h3>
+<pre>
+  body {
+     background-image: url("paper.gif");
+ }
+</pre>
+<h3>Background for paragraph</h3>
+<pre>
+  body {
+     background-image: url("bgdesert.jpg");
+ }
+</pre>
+</body>
+</html>
